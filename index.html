@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <h1>FormSubmit Demo</h1>
+            <!-- INSERT EMAIL STRING ADDRESS -->
+            <form name="ContactForm" action="https://formsubmit.co/yourfirstemailstring@email.com" enctype="text/plain" class="col-12 mt-4 pb-4" autocomplete="on" method="POST">
+                <div class="form-group col-12">
+                    <div class="form-row justify-content-center">
+                        <div class="col-12 col-sm-6">
+                            <input id="name" type="text" class="form-control" name="name" placeholder="Nome*" required>
+
+                            <!-- LINK OF THANKYOU PAGE -->
+                            <input type="hidden" name="_next" value="https://yourdomain.com/thankYouPage.html">
+
+                            <!-- Disable reCAPTCHA -->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!-- CUSTOM SUBJECT -->
+                            <input type="hidden" name="_subject" value="New submission!">
+
+                            <!-- INSERT MULTIPLE EMAIL ADDRESSES -->
+                            <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com">
+
+                            <!-- TEMPLATE TABLE FOR A SIMPLE CONSULTANT -->
+                            <input type="hidden" name="_template" value="table">
+
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input id="lastName" type="text" class="form-control" name="lastName" placeholder="Cognome*" required>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email*" required>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Telefono*" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group col-12">
+                    <div class="form-row justify-content-center">
+                        <div class="col-12">
+                            <label for="state"></label>
+                            <select class="form-control" id="state" name="state" required>
+                                <option value="">Seleziona la provincia*</option>
+                                <option>Agrigento</option>
+                                <option>Alessandria</option>
+                                <option>Ancona</option>
+                                <option>Aosta</option>
+                                <option>Arezzo</option>
+                                <option>Ascoli Piceno</option>
+                                <option>Asti</option>
+                                <option>Avellino</option>
+                                <option>Bari</option>
+                                <option>Belluno</option>
+                                <option>Benevento</option>
+                                <option>Bergamo</option>
+                                <option>Biella</option>
+                                <option>Bologna</option>
+                                <option>Bolzano</option>
+                                <option>Brescia</option>
+                                <option>Brindisi</option>
+                                <option>Cagliari</option>
+                                <option>Caltanisetta</option>
+                                <option>Campobasso</option>
+                                <option>Carbonia-Iglesias</option>
+                                <option>Caserta</option>
+                                <option>Catania</option>
+                                <option>Catanzaro</option>
+                                <option>Chieti</option>
+                                <option>Como</option>
+                                <option>Cosenza</option>
+                                <option>Cremona</option>
+                                <option>Crotone</option>
+                                <option>Cuneo</option>
+                                <option>Enna</option>
+                                <option>Ferrara</option>
+                                <option>Firenze</option>
+                                <option>Foggia</option>
+                                <option>Forlì-Cesena</option>
+                                <option>Frosinone</option>
+                                <option>Genova</option>
+                                <option>Gorizia</option>
+                                <option>Grosseto</option>
+                                <option>Imperia</option>
+                                <option>Isernia</option>
+                                <option>La Spezia</option>
+                                <option>L'Aquila</option>
+                                <option>Latina</option>
+                                <option>Lecce</option>
+                                <option>Livorno</option>
+                                <option>Lodi</option>
+                                <option>Lucca</option>
+                                <option>Macerata</option>
+                                <option>Mantova</option>
+                                <option>Massa-Carrara</option>
+                                <option>Matera</option>
+                                <option>Medio Campidano</option>
+                                <option>Messina</option>
+                                <option>Milano</option>
+                                <option>Modena</option>
+                                <option>Napoli</option>
+                                <option>Novara</option>
+                                <option>Nuoro</option>
+                                <option>Ogliastra</option>
+                                <option>Olbia-Tempio</option>
+                                <option>Oristano</option>
+                                <option>Padova</option>
+                                <option>Palermo</option>
+                                <option>Parma</option>
+                                <option>Pavia</option>
+                                <option>Perugia</option>
+                                <option>Pesaro e Urbino</option>
+                                <option>Pescara</option>
+                                <option>Piacenza</option>
+                                <option>Pisa</option>
+                                <option>Pistoia</option>
+                                <option>Pordenone</option>
+                                <option>Potenza</option>
+                                <option>Prato</option>
+                                <option>Ragusa</option>
+                                <option>Ravenna</option>
+                                <option>Reggio Calabria</option>
+                                <option>Rieti</option>
+                                <option>Rimini</option>
+                                <option>Roma</option>
+                                <option>Rovigo</option>
+                                <option>Salerno</option>
+                                <option>Sassari</option>
+                                <option>Savona</option>
+                                <option>Siena</option>
+                                <option>Siracusa</option>
+                                <option>Sondrio</option>
+                                <option>Taranto</option>
+                                <option>Teerni</option>
+                                <option>Torino</option>
+                                <option>Trapani</option>
+                                <option>Trento</option>
+                                <option>Treviso</option>
+                                <option>Trieste</option>
+                                <option>Udine</option>
+                                <option>Varese</option>
+                                <option>Venezia</option>
+                                <option>Verbano-Cusio-Ossola</option>
+                                <option>Vercelli</option>
+                                <option>Verona</option>
+                                <option>Vibo Velentia</option>
+                                <option>Vicenza</option>
+                                <option>Viterbo</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group col-12">
+                    <div class="form-row justify-content-center">
+                        <div class="col-12 col-sm-6">
+                            <input id="quantity" type="text" class="form-control" name="quantity" placeholder="Quantità">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input id="size" type="text" class="form-control" name="size" placeholder="Misure*" required>
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group col-12 col-sm-6">
+                        <select class="form-control" name="size" required>
+                            <option value="">Misure*</option>
+                            <option>Misura 1</option>
+                            <option>Misura 2</option>
+                            <option>Misura 3</option>
+                            <option>Misura 4</option>
+                        </select> 
+                    </div>-->
+                </div>
+                <div class="form-group col-xl-12">
+                    <div class="form-row justify-content-center">
+                        <div class="col-12">
+                            <textarea class="form-control" id="note" name="note" rows="1" placeholder="Note"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" >
+                    <div class="form-row justify-content-center">
+                        <div class=" form-check offset-2 col-8 checkbox text-center mt-3 flex">
+                            <input type="checkbox" class="form-check-input" id="check" required>
+                            <label class="form-check-label" name="check" for="check">Accetto la privacy policy e di ricevere comunicazioni marketing da Fabbro Chiaravelli <a href="https://www.iubenda.com/privacy-policy/42590952"target="_blank">Privacy Policy</a></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <input type="hidden" name="thankyoupage" value="landing-chiaravalli-thankYou-page.php">
+                    <button type="submit" class="btn red-btn mt-3" onclick="redirect()"> Invia ora la tua richiesta</button>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
